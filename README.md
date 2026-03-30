@@ -1,53 +1,107 @@
-# Getting Started with Create React App
+# React Music Player
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive music player built with React that provides a smooth audio experience with an intuitive interface.
 
-## Available Scripts
+## 🎵 Features
 
-In the project directory, you can run:
+- **Audio Playback**: Play, pause, skip forward/backward through songs
+- **Time Control**: Interactive progress bar to scrub through tracks
+- **Song Library**: Browse and select songs from a collapsible library
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Auto-Advance**: Automatically plays the next song when current track ends
+- **Visual Feedback**: Active song highlighting in the library
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd react-player
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📱 Usage
 
-### `npm run eject`
+- **Play/Pause**: Click the play/pause button in the center
+- **Skip Tracks**: Use the forward/backward arrows to navigate songs
+- **Time Scrubbing**: Drag the progress bar to jump to different parts of the song
+- **Browse Library**: Click the menu icon to toggle the song library
+- **Select Songs**: Click any song in the library to play it immediately
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Built With
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React** - Frontend framework
+- **SCSS** - Styling
+- **FontAwesome** - Icons
+- **HTML5 Audio** - Audio playback
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── components/
+│   ├── Player.js      # Main player controls
+│   ├── Song.js        # Current song display
+│   ├── Library.js     # Song library container
+│   ├── LibrarySong.js # Individual song item
+│   └── Nav.js         # Navigation header
+├── styles/
+│   ├── app.scss       # Main styles
+│   ├── _player.scss   # Player component styles
+│   ├── _song.scss     # Song display styles
+│   ├── _library.scss  # Library styles
+│   └── _nav.scss      # Navigation styles
+├── data.js            # Song data
+└── App.js             # Main app component
+```
 
-## Learn More
+## 🎯 Key Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Player**: Handles audio playback, time updates, and user controls
+- **Library**: Displays all available songs with selection functionality
+- **Song**: Shows current playing song with album art
+- **Navigation**: Toggles library visibility
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📱 Mobile Support
 
-### Code Splitting
+The app is fully responsive and works seamlessly on mobile devices. Touch interactions are optimized for smaller screens, and the library slides in from the side on mobile.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔧 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (not recommended)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is private and not licensed for public use.
 
 ### Analyzing the Bundle Size
 
